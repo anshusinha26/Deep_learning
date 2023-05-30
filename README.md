@@ -78,3 +78,36 @@ The CNN model is trained for 25 epochs on the training set and evaluated on the 
 ## Making Predictions
 
 A code snippet is provided at the end of the notebook to demonstrate how to make predictions on a single image using the trained model.
+
+
+# 🟡 Recurrent neural networks
+
+This notebook demonstrates the implementation of a Recurrent Neural Network (RNN) for stock price prediction using historical data. It utilizes the Keras library for building and training the RNN model.
+
+## Data Preprocessing
+
+The notebook begins with data preprocessing steps to prepare the training set. The steps include importing the necessary libraries, importing the training set data, scaling the data using MinMaxScaler, creating a data structure with defined timesteps, and reshaping the input data.
+
+## Building and Training the RNN
+
+The RNN model is built and trained in this section using the Keras library. It consists of multiple LSTM layers with Dropout regularization for improved performance. The model is compiled with the Adam optimizer and Mean Squared Error (MSE) loss function. The training set is fitted to the model with specified epochs and batch size.
+
+## Making Predictions and Visualizing Results
+
+In the final part, the trained RNN model is used to make predictions on the test set. The real stock price values of 2017 are obtained, and the predicted stock price values are computed. The predicted values are then inverse-transformed to their original scale. The results are visualized by plotting the real and predicted Google stock prices over time.
+
+## Prerequisites
+
+- Python 3.x
+- Jupyter Notebook
+- Libraries: numpy, matplotlib, pandas, scikit-learn, Keras
+
+## Usage
+
+1. Download the notebook file (RNN.ipynb) and the required dataset files (Google_Stock_Price_Train.csv and Google_Stock_Price_Test.csv).
+2. Open the notebook in Jupyter Notebook or JupyterLab.
+3. Run each cell sequentially to execute the code step-by-step.
+4. Review the output and visualizations to observe the real and predicted stock prices.
+
+Please note that this notebook requires the Keras library and the specified dataset files to be present in the same directory.
+
